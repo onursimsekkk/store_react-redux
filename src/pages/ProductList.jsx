@@ -1,5 +1,6 @@
 import React from 'react';
 import FakeStoreAPI from '../services/fakeStoreAPI';
+import { Link } from 'react-router-dom';
 import { Icon, Menu, Table } from 'semantic-ui-react';
 
 function ProductList() {
@@ -21,10 +22,10 @@ function ProductList() {
         <Table.Body>
           {
             products.map(product => (
-              <Table.Row>
-              <Table.Cell>{product.title}</Table.Cell>
+            <Table.Row key={product.id}>
+              <Table.Cell><Link to={`/products/${product.id}`}>{product.title}</Link></Table.Cell>
               <Table.Cell>${product.price}</Table.Cell>
-              <Table.Cell>{product.description}</Table.Cell>
+              <Table.Cell>{product.description}</Table.Cell> 
               <Table.Cell>{product.category}</Table.Cell>
             </Table.Row>
             ))
