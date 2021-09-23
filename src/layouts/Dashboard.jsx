@@ -8,10 +8,10 @@ function Dashboard() {
     <div>
       <Grid>
         <Grid.Row>
-          <Grid.Column width={4}>
+          <Grid.Column computer={4} mobile={16}>
             <Categories />
           </Grid.Column>
-          <Grid.Column width={12}>
+          <Grid.Column computer={12} mobile={16}>
             <ProductList />
           </Grid.Column>
         </Grid.Row>
