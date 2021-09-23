@@ -1,11 +1,11 @@
 import React from 'react';
 import FakeStoreAPI from '../services/fakeStoreAPI';
-import { Icon, Label, Menu, Table } from 'semantic-ui-react';
+import { Icon, Menu, Table } from 'semantic-ui-react';
 
 function ProductList() {
 
   const products = FakeStoreAPI();
-  console.log(products);
+  
   return (
     <>
       <Table celled>
