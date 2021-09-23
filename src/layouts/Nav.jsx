@@ -5,7 +5,7 @@ import { Button, Container, Menu } from 'semantic-ui-react';
 function Nav() {
   return (
     <>
-      <Menu inverted>
+      <Menu inverted fixed="top">
         <Container>
           <Menu.Item name="home" />
           <Menu.Item name="messages" />
